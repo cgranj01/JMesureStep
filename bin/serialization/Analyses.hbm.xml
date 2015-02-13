@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 f?vr. 2015 15:09:41 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="serialization.Analyses" table="ANALYSES">
+        <id name="anadate" type="java.util.GregorianCalendar">
+            <column name="ANADATE" />
+            <generator class="assigned" />
+        </id>
+        <property name="entmes" type="float">
+            <column name="ENTMES" />
+        </property>
+        <property name="entdco" type="float">
+            <column name="ENTDCO" />
+        </property>
+        <property name="entdb05" type="float">
+            <column name="ENTDB05" />
+        </property>
+        <property name="entppO4" type="float">
+            <column name="ENTPPO4" />
+        </property>
+        <property name="entntk" type="float">
+            <column name="ENTNTK" />
+        </property>
+        <property name="entnh4" type="float">
+            <column name="ENTNH4" />
+        </property>
+        <property name="entnno2" type="float">
+            <column name="ENTNNO2" />
+        </property>
+        <property name="entnno3" type="float">
+            <column name="ENTNNO3" />
+        </property>
+        <property name="entph" type="float">
+            <column name="ENTPH" />
+        </property>
+        <property name="entmes2" type="float">
+            <column name="ENTMES2" />
+        </property>
+        <property name="entdco2" type="float">
+            <column name="ENTDCO2" />
+        </property>
+        <property name="entdb052" type="float">
+            <column name="ENTDB052" />
+        </property>
+        <property name="entppO42" type="float">
+            <column name="ENTPPO42" />
+        </property>
+        <property name="entntk2" type="float">
+            <column name="ENTNTK2" />
+        </property>
+        <property name="entnh42" type="float">
+            <column name="ENTNH42" />
+        </property>
+        <property name="entnno22" type="float">
+            <column name="ENTNNO22" />
+        </property>
+        <property name="entnno32" type="float">
+            <column name="ENTNNO32" />
+        </property>
+        <property name="entph2" type="float">
+            <column name="ENTPH2" />
+        </property>
+        <property name="sormes" type="float">
+            <column name="SORMES" />
+        </property>
+        <property name="sordco" type="float">
+            <column name="SORDCO" />
+        </property>
+        <property name="sordb05" type="float">
+            <column name="SORDB05" />
+        </property>
+        <property name="sorppO4" type="float">
+            <column name="SORPPO4" />
+        </property>
+        <property name="sorntk" type="float">
+            <column name="SORNTK" />
+        </property>
+        <property name="sornh4" type="float">
+            <column name="SORNH4" />
+        </property>
+        <property name="sornno2" type="float">
+            <column name="SORNNO2" />
+        </property>
+        <property name="sornno3" type="float">
+            <column name="SORNNO3" />
+        </property>
+        <property name="sorph" type="float">
+            <column name="SORPH" />
+        </property>
+        <property name="msent" type="float">
+            <column name="MSENT" />
+        </property>
+        <property name="msot" type="float">
+            <column name="MSOT" />
+        </property>
+        <property name="msaer" type="float">
+            <column name="MSAER" />
+        </property>
+        <property name="msrecirc" type="float">
+            <column name="MSRECIRC" />
+        </property>
+        <property name="badec" type="float">
+            <column name="BADEC" />
+        </property>
+        <property name="batemp" type="float">
+            <column name="BATEMP" />
+        </property>
+        <property name="basecc" type="float">
+            <column name="BASECC" />
+        </property>
+    </class>
+</hibernate-mapping>

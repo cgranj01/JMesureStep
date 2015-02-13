@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="639.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PrincipaleController">
+   <center>
+      <VBox prefHeight="666.0" prefWidth="940.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="85.0" prefWidth="950.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fx:id="logosap2i" fitHeight="82.0" fitWidth="107.0" layoutX="15.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/images/logosap2ipetit.jpg" />
+                     </image>
+                  </ImageView>
+                  <DatePicker fx:id="anadate" editable="false" layoutX="399.0" layoutY="37.0" onAction="#lireanalyses" prefHeight="25.0" prefWidth="212.0" promptText="Sélectionner une date" showWeekNumbers="true" />
+                  <Label layoutX="244.0" layoutY="40.0" text="DATE DES ANALYSES">
+                     <font>
+                        <Font name="Candara Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="81.0" fitWidth="74.0" layoutX="819.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/images/Logo SIAJ10.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="566.0" prefWidth="913.0">
+               <children>
+                  <TextField id="ENTREE_STEP_MES" fx:id="entmes" alignment="CENTER_RIGHT" layoutX="107.0" layoutY="94.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_DCO" fx:id="entdco" alignment="CENTER_RIGHT" layoutX="106.0" layoutY="131.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_DB05" fx:id="entdb05" alignment="CENTER_RIGHT" layoutX="106.0" layoutY="168.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_PPO4" fx:id="entppO4" alignment="CENTER_RIGHT" layoutX="106.0" layoutY="205.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_NTK" fx:id="entntk" alignment="CENTER_RIGHT" layoutX="106.0" layoutY="242.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_NNH4" fx:id="entnh4" alignment="CENTER_RIGHT" layoutX="106.0" layoutY="280.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_NNO2" fx:id="entnno2" alignment="CENTER_RIGHT" layoutX="106.0" layoutY="319.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_NNO3" fx:id="entnno3" alignment="CENTER_RIGHT" layoutX="106.0" layoutY="358.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_PH" fx:id="entph" alignment="CENTER_RIGHT" layoutX="106.0" layoutY="397.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_MES" fx:id="entmes2" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="94.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_MES" fx:id="entdco2" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="131.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_MES" fx:id="entdb052" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="168.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_MES" fx:id="entppO42" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="205.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_MES" fx:id="entntk2" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="242.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_MES" fx:id="entnh42" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="280.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_MES" fx:id="entnno22" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="318.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_MES" fx:id="entnno32" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="358.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_MES" fx:id="entph2" alignment="CENTER_RIGHT" layoutX="214.0" layoutY="397.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_MES" fx:id="sormes" alignment="CENTER_RIGHT" layoutX="325.0" layoutY="94.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_DCO" fx:id="sordco" alignment="CENTER_RIGHT" layoutX="325.0" layoutY="131.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_DB05" fx:id="sordb05" alignment="CENTER_RIGHT" layoutX="325.0" layoutY="168.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_PPO4" fx:id="sorppO4" alignment="CENTER_RIGHT" layoutX="325.0" layoutY="205.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_NTK" fx:id="sorntk" alignment="CENTER_RIGHT" layoutX="325.0" layoutY="242.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_NNH4" fx:id="sornh4" alignment="CENTER_RIGHT" layoutX="325.0" layoutY="280.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_NNO2" fx:id="sornno2" alignment="CENTER_RIGHT" layoutX="325.0" layoutY="319.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_NNO3" fx:id="sornno3" alignment="CENTER_RIGHT" layoutX="325.0" layoutY="358.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="ENTREE_STEP_PH" fx:id="sorph" alignment="CENTER_RIGHT" layoutX="325.0" layoutY="397.0" prefHeight="25.0" prefWidth="96.0" />
+                  <Label layoutX="123.0" layoutY="58.0" text="ENTREE 1" textFill="#393459">
+                     <font>
+                        <Font name="Candara Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="431.0" layoutY="97.0" text="mg/l" />
+                  <Label layoutX="65.0" layoutY="98.0" text="MES" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="59.0" layoutY="172.0" text="DB05" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="53.0" layoutY="209.0" text="P-PO4" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="43.0" layoutY="284.0" text="N-NH4+" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="45.0" layoutY="323.0" text="N-NO2-" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="45.0" layoutY="362.0" text="N-NO3-" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="69.0" layoutY="401.0" text="pH" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="431.0" layoutY="134.0" text="mg/l" />
+                  <Label layoutX="431.0" layoutY="171.0" text="mg/l" />
+                  <Label layoutX="431.0" layoutY="208.0" text="mg/l" />
+                  <Label layoutX="431.0" layoutY="245.0" text="mg/l" />
+                  <Label layoutX="431.0" layoutY="283.0" text="mg/l" />
+                  <Label layoutX="431.0" layoutY="322.0" text="mg/l" />
+                  <Label layoutX="431.0" layoutY="361.0" text="mg/l" />
+                  <Label layoutX="603.0" layoutY="81.0" text="Entrée table">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="607.0" layoutY="118.0" text="Sortie filtre">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="620.0" layoutY="155.0" text="Aeration">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="599.0" layoutY="190.0" text="Recirculation">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <TextField id="MS_ENTREE_TABLE" fx:id="msent" alignment="CENTER_RIGHT" layoutX="684.0" layoutY="77.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="MS_SORTIE_FILTRE" fx:id="msot" alignment="CENTER_RIGHT" layoutX="684.0" layoutY="114.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="MS_AERATION" fx:id="msaer" alignment="CENTER_RIGHT" layoutX="684.0" layoutY="151.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="MS_RECIRCULATION" fx:id="msrecirc" alignment="CENTER_RIGHT" layoutX="684.0" layoutY="186.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="MS_ENTREE_TABLE" fx:id="badec" alignment="CENTER_RIGHT" layoutX="682.0" layoutY="322.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="MS_SORTIE_FILTRE" fx:id="batemp" alignment="CENTER_RIGHT" layoutX="682.0" layoutY="360.0" prefHeight="25.0" prefWidth="96.0" />
+                  <TextField id="MS_RECIRCULATION" fx:id="basecc" alignment="CENTER_RIGHT" layoutX="682.0" layoutY="398.0" prefHeight="25.0" prefWidth="96.0" />
+                  <Label layoutX="594.0" layoutY="401.0" text="Disque Secchi">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="599.0" layoutY="363.0" text="Température">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="602.0" layoutY="326.0" text="Décantation">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="794.0" layoutY="81.0" text="g/l" />
+                  <Label layoutX="794.0" layoutY="155.0" text="g/l" />
+                  <Label layoutX="794.0" layoutY="190.0" text="g/l" />
+                  <Label layoutX="794.0" layoutY="118.0" prefHeight="17.0" prefWidth="18.0" text="\%  " />
+                  <Label layoutX="789.0" layoutY="324.0" text="ml/l" />
+                  <Label layoutX="791.0" layoutY="361.0" text="°C" />
+                  <Label layoutX="788.0" layoutY="401.0" text="cm" />
+                  <Button fx:id="mettreajouranalyse" defaultButton="true" layoutX="721.0" layoutY="499.0" mnemonicParsing="false" onAction="#update" prefHeight="24.0" prefWidth="122.0" text="Valider">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Separator layoutX="512.0" orientation="VERTICAL" prefHeight="483.0" prefWidth="8.0" />
+                  <Separator layoutX="-3.0" layoutY="479.0" prefHeight="8.0" prefWidth="932.0" />
+                  <Separator layoutX="514.0" layoutY="246.0" prefHeight="7.0" prefWidth="415.0" />
+                  <Separator prefHeight="3.0" prefWidth="924.0" />
+                  <Label layoutX="231.0" layoutY="58.0" text="ENTREE 2" textFill="#393459">
+                     <font>
+                        <Font name="Candara Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="340.0" layoutY="58.0" text="SORTIE" textFill="#393459">
+                     <font>
+                        <Font name="Candara Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="63.0" layoutY="135.0" text="DCO" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="62.0" layoutY="246.0" text="NTK" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="668.0" layoutY="36.0" text="MATIERES SECHES" textFill="#393459">
+                     <font>
+                        <Font name="Candara Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="659.0" layoutY="284.0" text="BASSIN D'AERATION" textFill="#393459">
+                     <font>
+                        <Font name="Candara Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="quitter" cancelButton="true" layoutX="562.0" layoutY="499.0" mnemonicParsing="false" onAction="#quit" prefHeight="30.0" prefWidth="122.0" text="Fermer">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblinfo" alignment="BASELINE_CENTER" layoutX="514.0" layoutY="541.0" prefHeight="27.0" prefWidth="413.0" style="-fx-border-color: lightgrey;" text="Veuillez sélectionner un date">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BASELINE_CENTER" layoutX="-2.0" layoutY="541.0" prefHeight="27.0" prefWidth="517.0" style="-fx-border-color: lightgrey;">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="supprimer" cancelButton="true" layoutX="401.0" layoutY="499.0" mnemonicParsing="false" onAction="#supp" prefHeight="30.0" prefWidth="122.0" text="Supprimer">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
